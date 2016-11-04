@@ -1,0 +1,170 @@
+/*
+* scintin.css is the most specific style set for the application. All the style changes
+encountered in Yii and Sublime integration are recorded in scintin.css
+* Version: 1.0
+* Author: Bollu & Kalyan
+*/
+
+/* Help text in main login page */
+.main-login-help{
+    margin-bottom: 25px;
+}
+
+/* Removed Margin-bottom for input field and added the same for help text in the above block of code */
+.mb25-scintin{
+    margin-bottom: 0px;
+}
+
+.scintin-pull-right{
+    float: right;
+}
+
+.sc-border-primary,
+.sc-border-primary:focus{
+    border-color: #1582dc;
+}
+
+.big-icon-links:hover,
+.big-icon-links:focus{
+    color: #696969;
+}
+
+div.required label:after {
+    content: " *";
+}
+
+.b-radius5{
+    border-radius: 5px;
+}
+
+.view-table th{
+    width: 30%;
+}
+
+.datepicker{
+    min-width: 250px;
+}
+
+.sc-wizard-btns{
+    right: 0;
+    float: right;
+    padding: 5px 15px;
+    vertical-align: middle;
+    line-height: 37px;
+}
+
+#map{
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    overflow: visible;
+}
+
+#maps-breadcrumbs{
+    margin: 15px;
+    position: absolute;
+    z-index: 2;
+}
+
+#transport-icon-wrapper{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.8); /* Set the opacity for a slightly transparent Google Form */
+}
+
+#transport-index-wrapper{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.9); /* Set the opacity for a slightly transparent Google Form */
+}
+
+.stop-window-content{
+    line-height:1.35;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.sc-list{
+    padding-top: 10px;
+    border-top: 1px #ddd solid;
+    margin: 5px 0 0;
+    overflow: hidden;
+}
+
+.grey-hover:hover{
+    background-color: #ddd;
+}
+
+.chosen-field-width{
+    width: 100%;
+}
+
+.chat-box .chatbox-user .message {
+    max-width: 500px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.chat-box .chatbox-user.right .message {
+    float: right;
+}
+
+.chat-box .chatbox-user .chat-time {
+    text-align: left;
+}
+
+.chat-box .chatbox-user.right .chat-time {
+    text-align: right;
+}
+
+.chat-box .panel-body {
+    padding: 5px 10px;
+}
+
+.chat-box .chat-avatar {
+    width: 30px;
+}
+
+.chat-box .chatbox-user {
+    margin-bottom: 0px;
+}
+
+.sidebar-300.offscreen-right .panel-body {
+    background-color: #515e72;
+    color: #FFFFFF;
+}
+
+.sidebar-300.offscreen-right {
+    background-color: #FFFFFF;
+}
+
+.sidebar-300.offscreen-right .panel-body .text-muted {
+    color: #cccccc;
+}
+
+.media img.avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.media p {
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.media.right {
+    text-align: right;
+}
+
+.media.right p {
+    margin-right: 50px;
+}
+
+.media .comment-meta {
+    float: right;
+}
+
+.media .comment-author {
+    margin-bottom: 5px;
+}

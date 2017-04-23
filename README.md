@@ -5,18 +5,15 @@ The template contains the basic features including user login/logout and a conta
 It includes all commonly used configurations that would allow you to focus on adding new
 features to your application.
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-basic/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-basic/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
 
-DIRECTORY STRUCTURE
+DIRECTORY STRUCTURE (BASED ON YII 2.0 FRAMEWORK)
 -------------------
 
       assets/             contains assets definition
       commands/           contains console commands (controllers)
       config/             contains application configurations
       controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
       models/             contains model classes
       runtime/            contains files generated during runtime
       tests/              contains various tests for the basic application
@@ -74,30 +71,6 @@ You can then access the application through the following URL:
 ~~~
 http://localhost/basic/web/
 ~~~
-
-
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
-
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
-
 
 
 TESTING
@@ -169,21 +142,3 @@ To execute acceptance tests do the following:
    # run only unit and functional tests
    composer exec codecept run unit,functional
    ```
-
-### Code coverage support
-
-By default, code coverage is disabled in `codeception.yml` configuration file, you should uncomment needed rows to be able
-to collect code coverage. You can run your tests and collect coverage with the following command:
-
-```
-#collect coverage for all tests
-composer exec codecept run -- --coverage-html --coverage-xml
-
-#collect coverage only for unit tests
-composer exec codecept run unit -- --coverage-html --coverage-xml
-
-#collect coverage for unit and functional tests
-composer exec codecept run functional,unit -- --coverage-html --coverage-xml
-```
-
-You can see code coverage output under the `tests/_output` directory.

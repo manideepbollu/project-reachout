@@ -1,9 +1,7 @@
 ReachOut Chat Web Application
 ============================
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+It is a simple web chat application using some out-dated technologies such as Jquery, Ajax requests and PHP backend server. It has been built as a demo comparision app to check benchmark results against Node based web chat app.
 
 DIRECTORY STRUCTURE (BASED ON YII 2.0 FRAMEWORK)
 -------------------
